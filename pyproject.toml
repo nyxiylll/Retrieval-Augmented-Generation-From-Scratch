@@ -1,0 +1,7 @@
+[project]
+name = "retrieval-augmented-generation-from-scratch"
+version = "0.1.0"
+description = "Learning project implementing Retrieval-Augmented Generation (RAG) from scratch."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
