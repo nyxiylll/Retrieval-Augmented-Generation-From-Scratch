@@ -4,4 +4,14 @@ version = "0.1.0"
 description = "Learning project implementing Retrieval-Augmented Generation (RAG) from scratch."
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "charset-normalizer>=3.4.9",
+    "chromadb>=1.5.9",
+    "pymupdf>=1.28.0",
+    "sentence-transformers>=5.6.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
