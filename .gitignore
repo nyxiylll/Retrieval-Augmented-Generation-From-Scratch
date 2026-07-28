@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+.vscode/
+.idea/
+.DS_Store
+
+chroma_db/
+*.db
+
+dist/
+build/
+*.egg-info/

@@ -1,13 +1,15 @@
 [project]
 name = "retrieval-augmented-generation-from-scratch"
 version = "0.1.0"
-description = "Learning project implementing Retrieval-Augmented Generation (RAG) from scratch."
+description = "Retrieval-Augmented Generation (RAG) built from scratch."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
     "charset-normalizer>=3.4.9",
     "chromadb>=1.5.9",
+    "groq>=0.28.0",
     "pymupdf>=1.28.0",
+    "python-dotenv>=1.1.0",
     "sentence-transformers>=5.6.1",
 ]
 
@@ -15,3 +17,7 @@ dependencies = [
 dev = [
     "pytest>=9.1.1",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
