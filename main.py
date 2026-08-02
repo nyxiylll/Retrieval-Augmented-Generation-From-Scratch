@@ -3,10 +3,10 @@ import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
-from src.core.loader import load_file
-from src.core.splitter import SentenceSplitter
-from src.core.vectorstore import VectorStore
-from src.core.llm import GroqLLM
+from src.ingestion.parser.loader import load_file
+from src.ingestion.chunker.splitter import SentenceSplitter
+from src.database.vectorstore import VectorStore
+from src.llm.groq import GroqLLM
 from src.core.pipeline import RAGPipeline
 
 load_dotenv()
