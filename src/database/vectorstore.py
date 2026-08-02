@@ -8,7 +8,7 @@ import uuid
 logger = logging.getLogger(__name__)
 
 
-class VectorStore:
+class ChromaVectorStore:
 
     def __init__(
         self,
@@ -42,7 +42,7 @@ class VectorStore:
             "VectorStore ready — model: %s, collection: %s", model_name, collection_name
         )
 
-    def as_retriever(self, k: int) -> "VectorStore":
+    def as_retriever(self, k: int):
         if k < 1:
             raise ValueError("k must be at least 1")
         self._top_k = k

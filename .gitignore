@@ -15,3 +15,7 @@ chroma_db/
 dist/
 build/
 *.egg-info/
+
+*.pdf
+text.txt
+ui.py

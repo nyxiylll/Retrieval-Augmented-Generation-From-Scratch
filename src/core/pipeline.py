@@ -1,6 +1,6 @@
 from src.core.document import Document
-from src.core.vectorstore import VectorStore
-from src.core.llm import BaseLLM
+from src.database.vectorstore import VectorStore
+from src.llm.groq import BaseLLM
 from src.core.exception import PipelineError
 import logging
 
