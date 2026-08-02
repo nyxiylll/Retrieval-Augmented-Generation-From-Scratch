@@ -1,7 +1,7 @@
-name : CI
+name: CI
 
-on : 
-  push : 
+on:
+  push:
     branches:
       - Development
   pull_request:
@@ -10,24 +10,24 @@ on :
 
 jobs:
   test:
-    runs-on : ubantu-latest
+    runs-on: ubuntu-latest
 
-    setups :
-      - name: checkout code
+    steps:
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name : setup python 
-        uses : actions/setup-python@v5
-        with :
-          python-version: 3.14.3
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
 
-      - name : Install UV
-        runs : astral-sh/setup-uv@v5
+      - name: Install UV
+        uses: astral-sh/setup-uv@v5
 
-      - name : Install Dependencies 
-        runs : |
+      - name: Install Dependencies
+        run: |
           uv sync
 
-      - name : Run tests
-        runs : |
-          uv run pytest 
+      - name: Run tests
+        run: |
+          uv run pytest
