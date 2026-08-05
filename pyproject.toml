@@ -7,16 +7,20 @@ requires-python = ">=3.11"
 dependencies = [
     "charset-normalizer>=3.4.9",
     "chromadb>=1.5.9",
+    "fastapi>=0.141.1",
     "groq>=0.28.0",
     "openai>=2.52.0",
+    "pika>=1.4.2",
     "psycopg-pool>=3.3.1",
     "psycopg2>=2.9.12",
     "psycopg[binary]>=3.3.4",
     "pymupdf>=1.28.0",
     "python-dotenv>=1.1.0",
+    "python-multipart>=0.0.32",
     "sentence-transformers>=5.6.1",
     "sqlalchemy[asyncio]>=2.0.51",
     "streamlit>=1.60.0",
+    "uvicorn>=0.51.0",
 ]
 
 [dependency-groups]
